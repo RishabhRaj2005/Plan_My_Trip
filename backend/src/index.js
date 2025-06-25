@@ -9,7 +9,7 @@ import authRoutes from './routes/auth.route.js';
 import itineraryRoutes from './routes/itinerary.route.js'
 
 dotenv.config();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT||5000;
 const __dirname = path.resolve();
 
 const app = express();
