@@ -25,8 +25,8 @@ app.use(
 
 
 
-app.use("/api/auth", authRoutes);
-app.use("/api/itinerary", itineraryRoutes);
+app.use("/auth", authRoutes);
+app.use("/itinerary", itineraryRoutes);
 
 app.listen(PORT,()=>{
   console.log(`Server is running on port ${PORT}`);
