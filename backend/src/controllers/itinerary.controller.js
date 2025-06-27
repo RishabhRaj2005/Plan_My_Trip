@@ -12,7 +12,7 @@ export const generateItinerary = async (req,res) => {
         }
 
         const prompt = `Create a ${numDays}-day travel itinerary from ${source} to ${destination} for a budget of ${budget} INR.` +
-            (interests?.length ? ` Focus on these interests: ${interests.join(", ")}.` : "") + " Also provide hotel recommendations for each day. Answer in 200 words.";
+            (interests?.length ? ` Focus on these interests: ${interests.join(", ")}.` : "") + " Tell me what activities to be done every day. Also provide hotel recommendations for each day. Answer in 500 words.";
 
         const response = await ai.models.generateContent({
             model: "gemini-2.0-flash",
